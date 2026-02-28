@@ -100,10 +100,6 @@ function getGlobalProxySettings(): ProxySettings | null {
 }
 
 export function buildProxyUrl(source: VideoSource): string | undefined {
-  if (source.type === 'tvbox') {
-    return undefined;
-  }
-  
   if (source.proxyEnabled === false) {
     return undefined;
   }

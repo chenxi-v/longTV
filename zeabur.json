@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.zeabur.app/template.json",
+  "services": [
+    {
+      "name": "longtv-frontend",
+      "type": "NODEJS",
+      "source": {
+        "type": "git",
+        "url": "."
+      },
+      "build": {
+        "command": "npm run build"
+      },
+      "start": {
+        "command": "npm start"
+      },
+      "env": {
+        "NODE_VERSION": "20"
+      }
+    }
+  ]
+}
